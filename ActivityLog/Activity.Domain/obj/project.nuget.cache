@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "4tyBL/y95VMb5bez4iZbDrlEgZQirjruW38bFDo2iWKyU6b3g2FHnImez4rmm/7bC30koyYI0Jq0NbMe5KrNIw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ewelina\\Desktop\\IO\\ActivityLog\\Activity.Domain\\Activity.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ewelina\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.1.11\\sqlitepclraw.bundle_green.2.1.11.nupkg.sha512",
+    "C:\\Users\\Ewelina\\.nuget\\packages\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "C:\\Users\\Ewelina\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\Ewelina\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.11\\sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512",
+    "C:\\Users\\Ewelina\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,38 @@
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.exe
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.deps.json
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.runtimeconfig.json
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.dll
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.pdb
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.Form1.resources
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.csproj.GenerateResource.cache
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.AssemblyInfoInputs.cache
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.AssemblyInfo.cs
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.csproj.CoreCompileInputs.cache
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.dll
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\refint\ALLHAILAGNIESZKAANDHERMIRACLES.dll
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.pdb
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.genruntimeconfig.cache
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ref\ALLHAILAGNIESZKAANDHERMIRACLES.dll
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.Properties.Resources.resources
+D:\Github\IO\Dziennik Aktywności\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.UIProjectObject.resources
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.exe
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.deps.json
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.runtimeconfig.json
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.dll
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\bin\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.pdb
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.Form1.resources
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.Properties.Resources.resources
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.UIProjectObject.resources
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.csproj.GenerateResource.cache
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.AssemblyInfoInputs.cache
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.AssemblyInfo.cs
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.csproj.CoreCompileInputs.cache
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.sourcelink.json
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.dll
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\refint\ALLHAILAGNIESZKAANDHERMIRACLES.dll
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.pdb
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.genruntimeconfig.cache
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ref\ALLHAILAGNIESZKAANDHERMIRACLES.dll
+C:\Users\agabi\source\repos\Bumckfsz\IO_projekt_2025-26\ALLHAILAGNIESZKAANDHERMIRACLES\obj\Debug\net8.0-windows\ALLHAILAGNIESZKAANDHERMIRACLES.UITaskObject.resources
