@@ -51,6 +51,7 @@
             projectName.Name = "projectName";
             projectName.Size = new Size(103, 95);
             projectName.TabIndex = 1;
+            projectName.TextChanged += projectName_TextChanged;
             // 
             // UIProjectObject
             // 

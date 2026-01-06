@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Downloads\ActivityLog_V2\ActivityLog\Activity.Data\Activity.Data.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Downloads\ActivityLog_V2\ActivityLog\Activity.Domain\Activity.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

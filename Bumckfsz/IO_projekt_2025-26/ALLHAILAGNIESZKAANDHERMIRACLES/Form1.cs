@@ -1,3 +1,5 @@
+using Activity.Domain.Services;
+
 namespace ALLHAILAGNIESZKAANDHERMIRACLES
 {
 
@@ -15,9 +17,13 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             if (_projectCount < 9)
             {
                 _projectCount++;
-                var project = new UIProjectObject(_projectCount, panel1);
+                var project = new UIProjectObject(_projectCount, panel1, "default");
                 //projekt.Nazwa = $"Project{_projectCounter++}";
                 tableLayoutPanel1.Controls.Add(project);
+
+                ProjectService defaultService = new ProjectService();
+                defaultService.AddProject("firstProject","firstDescription");
+                MessageBox.Show("cokolwiekchcejakistekst");
             }
             else
             {

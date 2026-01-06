@@ -15,11 +15,13 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
     {
         private int _projectObjectNumber;
         private Panel _panel1;
+        string _name;
 
-        public UIProjectObject(int projectObjectNumber, Panel panel1)
+        public UIProjectObject(int projectObjectNumber, Panel panel1, string name)
         {
             _projectObjectNumber = projectObjectNumber;
             _panel1 = panel1;
+            _name = name;
             InitializeComponent();
 
             projectName.MaxLength = 50;
@@ -38,9 +40,15 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             _panel1.Visible = false;
         }
 
-        private void projectName_Click(object sender, EventArgs e){
+        private void projectName_Click(object sender, EventArgs e)
+        {
 
-           
+
+
+        }
+
+        private void projectName_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
