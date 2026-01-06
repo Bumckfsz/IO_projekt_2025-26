@@ -8,23 +8,23 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\anton\\.nuget\\packages\\": {},
-    "D:\\Visual Studio\\Udostepnione składniki\\NuGetPackages": {}
+    "C:\\Users\\agabi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\IO\\Dziennik Aktywności\\ALLHAILAGNIESZKAANDHERMIRACLES\\ALLHAILAGNIESZKAANDHERMIRACLES.csproj",
+      "projectUniqueName": "C:\\Users\\agabi\\source\\repos\\Bumckfsz\\IO_projekt_2025-26\\ALLHAILAGNIESZKAANDHERMIRACLES\\ALLHAILAGNIESZKAANDHERMIRACLES.csproj",
       "projectName": "ALLHAILAGNIESZKAANDHERMIRACLES",
-      "projectPath": "D:\\Github\\IO\\Dziennik Aktywności\\ALLHAILAGNIESZKAANDHERMIRACLES\\ALLHAILAGNIESZKAANDHERMIRACLES.csproj",
-      "packagesPath": "C:\\Users\\anton\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\IO\\Dziennik Aktywności\\ALLHAILAGNIESZKAANDHERMIRACLES\\obj\\",
+      "projectPath": "C:\\Users\\agabi\\source\\repos\\Bumckfsz\\IO_projekt_2025-26\\ALLHAILAGNIESZKAANDHERMIRACLES\\ALLHAILAGNIESZKAANDHERMIRACLES.csproj",
+      "packagesPath": "C:\\Users\\agabi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\agabi\\source\\repos\\Bumckfsz\\IO_projekt_2025-26\\ALLHAILAGNIESZKAANDHERMIRACLES\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Visual Studio\\Udostepnione składniki\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\agabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -52,7 +52,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -76,7 +76,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -5,8 +5,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
     {
         private int _projectCount = 0;
 
-
-
         public Form1()
         {
             InitializeComponent();
@@ -17,9 +15,9 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             if (_projectCount < 9)
             {
                 _projectCount++;
-                var projekt = new UIProjectObject(_projectCount, panel1);
+                var project = new UIProjectObject(_projectCount, panel1);
                 //projekt.Nazwa = $"Project{_projectCounter++}";
-                tableLayoutPanel1.Controls.Add(projekt);
+                tableLayoutPanel1.Controls.Add(project);
             }
             else
             {
@@ -32,5 +30,15 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             panel1.Visible = true;
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var task = new UITaskObject(panel4);
+            tableLayoutPanel2.Controls.Add(task);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+        }
     }
 }

@@ -29,28 +29,41 @@
         private void InitializeComponent()
         {
             projectButton = new Button();
+            projectName = new TextBox();
             SuspendLayout();
             // 
             // projectButton
             // 
             projectButton.AutoSize = true;
-            projectButton.Location = new Point(3, 3);
+            projectButton.Location = new Point(3, 2);
+            projectButton.Margin = new Padding(3, 2, 3, 2);
             projectButton.Name = "projectButton";
-            projectButton.Size = new Size(200, 200);
+            projectButton.Size = new Size(162, 148);
             projectButton.TabIndex = 0;
             projectButton.UseVisualStyleBackColor = true;
             projectButton.Click += projectButton_Click;
             // 
+            // projectName
+            // 
+            projectName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            projectName.Location = new Point(33, 28);
+            projectName.Multiline = true;
+            projectName.Name = "projectName";
+            projectName.Size = new Size(103, 95);
+            projectName.TabIndex = 1;
+            // 
             // UIProjectObject
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.FromArgb(128, 128, 255);
+            BackColor = Color.Gainsboro;
+            Controls.Add(projectName);
             Controls.Add(projectButton);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "UIProjectObject";
-            Size = new Size(206, 206);
+            Size = new Size(168, 152);
             Load += UserControl1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -59,5 +72,6 @@
         #endregion
 
         private Button projectButton;
+        private TextBox projectName;
     }
 }
