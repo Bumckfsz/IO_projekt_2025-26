@@ -1,11 +1,11 @@
+using Activity.Domain.Services;
+
 namespace ALLHAILAGNIESZKAANDHERMIRACLES
 {
 
     public partial class Form1 : Form
     {
         private int _projectCount = 0;
-
-
 
         public Form1()
         {
@@ -17,9 +17,13 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             if (_projectCount < 9)
             {
                 _projectCount++;
-                var projekt = new UIProjectObject(_projectCount, panel1);
+                var project = new UIProjectObject(_projectCount, panel1, "default");
                 //projekt.Nazwa = $"Project{_projectCounter++}";
-                tableLayoutPanel1.Controls.Add(projekt);
+                tableLayoutPanel1.Controls.Add(project);
+
+                ProjectService defaultService = new ProjectService();
+                defaultService.AddProject("firstProject","firstDescription");
+                MessageBox.Show("cokolwiekchcejakistekst");
             }
             else
             {
@@ -32,5 +36,15 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             panel1.Visible = true;
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var task = new UITaskObject(panel4);
+            tableLayoutPanel2.Controls.Add(task);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+        }
     }
 }
