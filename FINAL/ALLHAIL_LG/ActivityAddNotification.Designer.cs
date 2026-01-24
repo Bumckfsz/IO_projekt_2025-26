@@ -2,15 +2,8 @@
 {
     partial class ActivityAddNotification
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -35,9 +28,10 @@
             // 
             // confirmButton
             // 
-            confirmButton.Location = new Point(206, 122);
+            confirmButton.Location = new Point(235, 163);
+            confirmButton.Margin = new Padding(3, 4, 3, 4);
             confirmButton.Name = "confirmButton";
-            confirmButton.Size = new Size(77, 23);
+            confirmButton.Size = new Size(88, 31);
             confirmButton.TabIndex = 0;
             confirmButton.Text = "confirm";
             confirmButton.UseVisualStyleBackColor = true;
@@ -45,32 +39,35 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 27);
+            textBox1.Location = new Point(14, 36);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(271, 89);
+            textBox1.Size = new Size(309, 117);
             textBox1.TabIndex = 1;
-            textBox1.TextChanged += this.textBox1_TextChanged;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // activityLabel
             // 
             activityLabel.AutoSize = true;
-            activityLabel.Location = new Point(12, 9);
+            activityLabel.Location = new Point(14, 12);
             activityLabel.Name = "activityLabel";
-            activityLabel.Size = new Size(70, 15);
+            activityLabel.Size = new Size(88, 20);
             activityLabel.TabIndex = 2;
             activityLabel.Text = "Description:";
             // 
             // ActivityAddNotification
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(295, 151);
+            ClientSize = new Size(337, 201);
             Controls.Add(activityLabel);
             Controls.Add(textBox1);
             Controls.Add(confirmButton);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "ActivityAddNotification";
             Text = "Add activity";
+            Load += ActivityAddNotification_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/* Logika przypomnien */
 namespace Activity.Domain.Services
 {
     public class ReminderService

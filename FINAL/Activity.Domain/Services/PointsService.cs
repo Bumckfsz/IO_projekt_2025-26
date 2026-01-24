@@ -5,10 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*System punktowy aplikacji
- * naliczanie punktów odbywa się przez dodanie aktywności i ukończenie zadania
- * Serwis przechowuje historie punktow i umozliwia pobranie stanu aktualnego
- */
 
 namespace Activity.Domain.Services
 {

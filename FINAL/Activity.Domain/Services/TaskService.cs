@@ -11,7 +11,6 @@ namespace Activity.Domain.Services
         {
             using (var context = new ActivityContext())
             {
-                // Musimy znaleźć ten projekt w aktualnym połączeniu do bazy
                 var projectDb = context.Projects.Find(project.ProjectId);
 
                 if (projectDb != null)
@@ -24,17 +23,15 @@ namespace Activity.Domain.Services
                         Status = Status.Started
                     };
 
-                    // Dzięki Shadow Properties, EF Core sam ogarnie relację
                     projectDb.Tasks.Add(task);
 
-                    context.SaveChanges(); // Zapis do bazy
+                    context.SaveChanges(); 
                     return task;
                 }
                 return null;
             }
         }
 
-        // Opcjonalnie: Metoda do oznaczania jako zakończone
         public void CompleteTask(ProjectTask task)
         {
             using (var context = new ActivityContext())

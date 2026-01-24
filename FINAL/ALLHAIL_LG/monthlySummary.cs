@@ -1,5 +1,4 @@
-﻿//monthlySummary.cs
-using Activity.Domain.Models;
+﻿using Activity.Domain.Models;
 using Activity.Domain.Data;
 using System;
 using System.Data;
@@ -22,7 +21,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
         {
             int totalPoints = 0;
 
-            // Miesiąc ma max 5 tygodni (częściowo)
             int[] weeklyPoints = new int[5];
             string[] weekLabels = { "Tydz 1", "Tydz 2", "Tydz 3", "Tydz 4", "Tydz 5" };
 
@@ -44,7 +42,7 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
                 foreach (var task in tasks)
                 {
                     int day = task.EndDate.Value.Day;
-                    int weekIndex = (day - 1) / 7; // Matematyka: dzień 1-7 to index 0, 8-14 to index 1...
+                    int weekIndex = (day - 1) / 7;
 
                     if (weekIndex < 5)
                     {
@@ -54,17 +52,15 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
                 }
             }
 
-            // 1. Ustawiamy Label z sumą punktów (monthlyPointsAmt)
+            // 1. Ustawiamy Label z sumą punktów 
             Control lbl = this.Controls.Find("monthlyPointsAmt", true).FirstOrDefault();
             if (lbl != null) lbl.Text = totalPoints.ToString();
             else
             {
-                // Fallback - szukanie po typie, jeśli nazwa inna
                 foreach (Control c in this.Controls)
                     if (c is Label && c.Name.Contains("Points")) c.Text = totalPoints.ToString();
             }
 
-            //  Rysujemy Wykres
             CreateOrUpdateChart(weeklyPoints, weekLabels);
         }
 
@@ -84,13 +80,11 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             chart.Series.Clear();
             Series series = new Series("PunktyMiesiac");
             series.ChartType = SeriesChartType.Column;
-            series.Color = Color.MediumSeaGreen; // Inny kolor dla miesiąca
+            series.Color = Color.MediumSeaGreen;
             series.IsValueShownAsLabel = true;
 
             for (int i = 0; i < data.Length; i++)
             {
-                // Rysujemy słupek tylko jeśli tydzień już minął lub trwa (opcjonalne)
-                // Tu rysujemy wszystkie 5 tygodni, nawet jak są 0
                 DataPoint p = new DataPoint();
                 p.SetValueXY(labels[i], data[i]);
                 series.Points.Add(p);
@@ -102,5 +96,15 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
         }
 
         private void weeklySummaryLabel_Click(object sender, EventArgs e) { }
+
+        private void monthlyPointsAmtLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

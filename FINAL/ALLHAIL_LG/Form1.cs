@@ -24,35 +24,23 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             InitializeComponent();
             SetupNavigation();
             RefreshProjectsList();
-            UpdateDailyPoints(); // Przelicz punkty na starcie
+            UpdateDailyPoints(); 
 
-            // ---  Konfiguracja Timera ---
             _notificationTimer = new System.Windows.Forms.Timer();
 
-            // Czas w milisekundach. 
-            // 1000 ms = 1 sekunda
-            // 60 * 1000 = 1 minuta
-            // 60 * 60 * 1000 = 1 godzina (3 600 000 ms)
             _notificationTimer.Interval = 1000 * 60 * 60;
 
-            // Co ma siê staæ jak minie czas:
             _notificationTimer.Tick += NotificationTimer_Tick;
 
-            // Uruchom odliczanie
             _notificationTimer.Start();
         }
 
-        // ---  Ta metoda odpala siê co godzinê ---
         private void NotificationTimer_Tick(object sender, EventArgs e)
         {
-            // Przekazujemy 'this' (Form1), ¿eby przycisk "Answer" dzia³a³ (jak ustaliliœmy wczeœniej)
             ToastNotification toast = new ToastNotification(this);
             toast.Show();
         }
 
-        // ==========================================
-        //  LOGIKA PUNKTÓW (ZA UKOÑCZONE ZADANIA)
-        // ==========================================
         private void UpdateDailyPoints()
         {
             int points = 0;
@@ -60,17 +48,13 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             {
                 DateTime today = DateTime.Today;
 
-                // Liczymy zadania, które s¹ UKOÑCZONE i maj¹ datê zakoñczenia DZISIAJ
-                // Uwaga: EndDate musi byæ ustawiane przy koñczeniu zadania (robimy to ni¿ej)
                 int completedTasksToday = db.ProjectTasks
                     .Where(t => t.Status == Status.Completed && t.EndDate >= today)
                     .Count();
 
-                // Przyjmijmy: 1 Ukoñczone Zadanie = 10 punktów 
                 points = completedTasksToday * 10;
             }
 
-            // ---  Aktualizujemy Label z punktami na KA¯DYM panelu ---
             // label3 - panel projektów
             // label5 - panel zadañ
             // label8 - panel aktywnoœci
@@ -96,24 +80,20 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             UpdateSingleBox(pictureBox1, fullPath);
             UpdateSingleBox(pictureBox2, fullPath);
             UpdateSingleBox(pictureBox3, fullPath);
-        }       
+        }
 
-        // Pomocnicza metoda, ¿eby nie kopiowaæ kodu 3 razy
-        // Czyœci stary obrazek (zwalnia pamiêæ) i ³aduje nowy
+        // Czyœci stary obrazek i ³aduje nowy
         private void UpdateSingleBox(PictureBox box, string path)
         {
             if (box == null) return;
 
             if (box.Image != null)
             {
-                box.Image.Dispose(); // Wa¿ne: Zwolnij stary obrazek z pamiêci
+                box.Image.Dispose(); 
             }
             box.Image = Image.FromFile(path);
         }
 
-        // ==========================================
-        // PROJEKTY (Z obs³ug¹ usuwania)
-        // ==========================================
         private void RefreshProjectsList()
         {
             tableLayoutPanel1.Controls.Clear();
@@ -125,7 +105,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
                 uiProject.OnProjectClick += HandleProjectSelected;
                 uiProject.OnProjectNameChanged += HandleProjectRename;
 
-                //  Obs³uga usuwania
                 uiProject.OnProjectDelete += HandleProjectDelete;
 
                 tableLayoutPanel1.Controls.Add(uiProject);
@@ -140,7 +119,7 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
                 db.SaveChanges();
             }
             RefreshProjectsList();
-            UpdateDailyPoints(); // Punkty mog¹ spaœæ jeœli usuniemy wykonane zadania
+            UpdateDailyPoints(); 
         }
 
         private void HandleProjectSelected(Project project)
@@ -173,9 +152,7 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             RefreshProjectsList();
         }
 
-        // ==========================================
-        // ZADANIA (Z obs³ug¹ usuwania i koñczenia)
-        // ==========================================
+
         private void RefreshTasksList()
         {
             if (_currentProject == null) return;
@@ -187,9 +164,8 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
 
             tableLayoutPanel2.Controls.Clear();
 
-            // Sortujemy: Najpierw aktywne, potem ukoñczone (na dole)
             var sortedTasks = _currentProject.Tasks
-                .OrderBy(t => t.Status == Status.Completed) // False (0) jest przed True (1)
+                .OrderBy(t => t.Status == Status.Completed) 
                 .ThenBy(t => t.TaskId);
 
             foreach (var task in sortedTasks)
@@ -198,7 +174,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
                 uiTask.OnTaskClick += HandleTaskSelected;
                 uiTask.OnTaskNameChanged += HandleTaskRename;
 
-                //  ZDARZENIA
                 uiTask.OnTaskDelete += HandleTaskDelete;
                 uiTask.OnTaskComplete += HandleTaskComplete;
 
@@ -221,23 +196,19 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
         {
             using (var db = new ActivityContext())
             {
-                // Musimy pobraæ zadanie z kontekstu, ¿eby je edytowaæ
                 var taskDb = db.ProjectTasks.Find(task.TaskId);
                 if (taskDb != null)
                 {
                     taskDb.Status = Status.Completed;
-                    taskDb.EndDate = DateTime.Now; //  Zapisujemy datê ukoñczenia!
+                    taskDb.EndDate = DateTime.Now; 
                     db.SaveChanges();
                 }
             }
 
-            // Odœwie¿amy listê (zadanie spadnie na dó³ i zrobi siê szare)
             RefreshTasksList();
 
-            // Naliczamy punkty i zmieniamy maskotkê!
             UpdateDailyPoints();
 
-            // Opcjonalnie: Gratulacje
             MessageBox.Show("Gratulacje! Zadanie ukoñczone (+10 pkt)");
         }
 
@@ -272,9 +243,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             RefreshTasksList();
         }
 
-        // ==========================================
-        // AKTYWNOŒCI
-        // ==========================================
         private void RefreshActivitiesList()
         {
             if (_currentTask == null) return;
@@ -333,6 +301,11 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
         {
             monthlySummary monthlySummary = new monthlySummary();
             monthlySummary.Show();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

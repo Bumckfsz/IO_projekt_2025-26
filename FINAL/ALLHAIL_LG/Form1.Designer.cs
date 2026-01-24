@@ -90,16 +90,16 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(150, 539);
+            panel2.Size = new Size(188, 674);
             panel2.TabIndex = 8;
             // 
             // button3
             // 
             button3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button3.Location = new Point(10, 24);
+            button3.Location = new Point(12, 30);
             button3.Margin = new Padding(2);
             button3.Name = "button3";
-            button3.Size = new Size(129, 75);
+            button3.Size = new Size(161, 94);
             button3.TabIndex = 4;
             button3.Text = "Dodaj Projekt";
             button3.UseVisualStyleBackColor = true;
@@ -109,10 +109,10 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(10, 132);
+            pictureBox1.Location = new Point(12, 165);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(129, 136);
+            pictureBox1.Size = new Size(161, 170);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -120,10 +120,10 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // button2
             // 
             button2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button2.Location = new Point(10, 452);
+            button2.Location = new Point(12, 565);
             button2.Margin = new Padding(2);
             button2.Name = "button2";
-            button2.Size = new Size(129, 66);
+            button2.Size = new Size(161, 82);
             button2.TabIndex = 2;
             button2.Text = "Podsumowanie miesięczne";
             button2.UseVisualStyleBackColor = true;
@@ -132,20 +132,20 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 287);
+            label1.Location = new Point(42, 359);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(84, 15);
+            label1.Size = new Size(103, 20);
             label1.TabIndex = 3;
             label1.Text = "Ilość punktów:";
             // 
             // button1
             // 
             button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button1.Location = new Point(10, 361);
+            button1.Location = new Point(12, 451);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(129, 70);
+            button1.Size = new Size(161, 88);
             button1.TabIndex = 0;
             button1.Text = "Podsumowanie tygodniowe";
             button1.UseVisualStyleBackColor = true;
@@ -154,20 +154,20 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(45, 305);
+            label3.Location = new Point(56, 381);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(26, 15);
+            label3.Size = new Size(32, 20);
             label3.TabIndex = 7;
             label3.Text = "INT";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(66, 305);
+            label2.Location = new Point(82, 381);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(30, 15);
+            label2.Size = new Size(39, 20);
             label2.TabIndex = 6;
             label2.Text = "/100";
             // 
@@ -175,10 +175,10 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // 
             panel3.Controls.Add(tableLayoutPanel1);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(150, 0);
+            panel3.Location = new Point(188, 0);
             panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(554, 539);
+            panel3.Size = new Size(692, 674);
             panel3.TabIndex = 9;
             // 
             // tableLayoutPanel1
@@ -198,8 +198,9 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
             tableLayoutPanel1.RowStyles.Add(new RowStyle());
-            tableLayoutPanel1.Size = new Size(554, 539);
+            tableLayoutPanel1.Size = new Size(692, 674);
             tableLayoutPanel1.TabIndex = 5;
+            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
             // panel1
             // 
@@ -212,7 +213,7 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(704, 539);
+            panel1.Size = new Size(880, 674);
             panel1.TabIndex = 8;
             // 
             // panel4
@@ -226,17 +227,17 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             panel4.Location = new Point(0, 0);
             panel4.Margin = new Padding(2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(704, 539);
+            panel4.Size = new Size(880, 674);
             panel4.TabIndex = 9;
             // 
             // panel5
             // 
             panel5.Controls.Add(tableLayoutPanel2);
             panel5.Dock = DockStyle.Fill;
-            panel5.Location = new Point(150, 0);
+            panel5.Location = new Point(188, 0);
             panel5.Margin = new Padding(2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(554, 539);
+            panel5.Size = new Size(692, 674);
             panel5.TabIndex = 9;
             // 
             // tableLayoutPanel2
@@ -270,7 +271,7 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
             tableLayoutPanel2.RowStyles.Add(new RowStyle());
-            tableLayoutPanel2.Size = new Size(550, 539);
+            tableLayoutPanel2.Size = new Size(688, 674);
             tableLayoutPanel2.TabIndex = 5;
             // 
             // panel6
@@ -287,16 +288,16 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             panel6.Location = new Point(0, 0);
             panel6.Margin = new Padding(2);
             panel6.Name = "panel6";
-            panel6.Size = new Size(150, 539);
+            panel6.Size = new Size(188, 674);
             panel6.TabIndex = 8;
             // 
             // button4
             // 
             button4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button4.Location = new Point(10, 24);
+            button4.Location = new Point(12, 30);
             button4.Margin = new Padding(2);
             button4.Name = "button4";
-            button4.Size = new Size(129, 75);
+            button4.Size = new Size(161, 94);
             button4.TabIndex = 4;
             button4.Text = "Dodaj Zadanie";
             button4.UseVisualStyleBackColor = true;
@@ -306,10 +307,10 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.InitialImage = null;
-            pictureBox2.Location = new Point(10, 132);
+            pictureBox2.Location = new Point(12, 165);
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(129, 136);
+            pictureBox2.Size = new Size(161, 170);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -317,10 +318,10 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // button5
             // 
             button5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button5.Location = new Point(10, 452);
+            button5.Location = new Point(12, 565);
             button5.Margin = new Padding(2);
             button5.Name = "button5";
-            button5.Size = new Size(129, 66);
+            button5.Size = new Size(161, 82);
             button5.TabIndex = 2;
             button5.Text = "Powrót";
             button5.UseVisualStyleBackColor = true;
@@ -329,30 +330,30 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(34, 287);
+            label4.Location = new Point(42, 359);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(84, 15);
+            label4.Size = new Size(103, 20);
             label4.TabIndex = 3;
             label4.Text = "Ilość punktów:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(45, 305);
+            label5.Location = new Point(56, 381);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(26, 15);
+            label5.Size = new Size(32, 20);
             label5.TabIndex = 7;
             label5.Text = "INT";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(66, 305);
+            label6.Location = new Point(82, 381);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(30, 15);
+            label6.Size = new Size(39, 20);
             label6.TabIndex = 6;
             label6.Text = "/100";
             // 
@@ -367,17 +368,17 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             panel7.Location = new Point(0, 0);
             panel7.Margin = new Padding(2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(704, 539);
+            panel7.Size = new Size(880, 674);
             panel7.TabIndex = 10;
             // 
             // panel8
             // 
             panel8.Controls.Add(tableLayoutPanel3);
             panel8.Dock = DockStyle.Fill;
-            panel8.Location = new Point(150, 0);
+            panel8.Location = new Point(188, 0);
             panel8.Margin = new Padding(2);
             panel8.Name = "panel8";
-            panel8.Size = new Size(554, 539);
+            panel8.Size = new Size(692, 674);
             panel8.TabIndex = 9;
             // 
             // tableLayoutPanel3
@@ -490,7 +491,7 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
             tableLayoutPanel3.RowStyles.Add(new RowStyle());
-            tableLayoutPanel3.Size = new Size(552, 537);
+            tableLayoutPanel3.Size = new Size(690, 671);
             tableLayoutPanel3.TabIndex = 5;
             tableLayoutPanel3.Paint += tableLayoutPanel3_Paint;
             // 
@@ -508,16 +509,16 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             panel9.Location = new Point(0, 0);
             panel9.Margin = new Padding(2);
             panel9.Name = "panel9";
-            panel9.Size = new Size(150, 539);
+            panel9.Size = new Size(188, 674);
             panel9.TabIndex = 8;
             // 
             // button6
             // 
             button6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button6.Location = new Point(10, 24);
+            button6.Location = new Point(12, 30);
             button6.Margin = new Padding(2);
             button6.Name = "button6";
-            button6.Size = new Size(129, 75);
+            button6.Size = new Size(161, 94);
             button6.TabIndex = 4;
             button6.Text = "Dodaj Aktywność";
             button6.UseVisualStyleBackColor = true;
@@ -527,10 +528,10 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.InitialImage = null;
-            pictureBox3.Location = new Point(10, 132);
+            pictureBox3.Location = new Point(12, 165);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(129, 136);
+            pictureBox3.Size = new Size(161, 170);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
@@ -538,10 +539,10 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // button7
             // 
             button7.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button7.Location = new Point(10, 452);
+            button7.Location = new Point(12, 565);
             button7.Margin = new Padding(2);
             button7.Name = "button7";
-            button7.Size = new Size(129, 66);
+            button7.Size = new Size(161, 82);
             button7.TabIndex = 2;
             button7.Text = "Powrót";
             button7.UseVisualStyleBackColor = true;
@@ -550,39 +551,39 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(34, 287);
+            label7.Location = new Point(42, 359);
             label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(84, 15);
+            label7.Size = new Size(103, 20);
             label7.TabIndex = 3;
             label7.Text = "Ilość punktów:";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(45, 305);
+            label8.Location = new Point(56, 381);
             label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(26, 15);
+            label8.Size = new Size(32, 20);
             label8.TabIndex = 7;
             label8.Text = "INT";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(66, 305);
+            label9.Location = new Point(82, 381);
             label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
-            label9.Size = new Size(30, 15);
+            label9.Size = new Size(39, 20);
             label9.TabIndex = 6;
             label9.Text = "/100";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleDimensions = new SizeF(120F, 120F);
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoScroll = true;
-            ClientSize = new Size(704, 539);
+            ClientSize = new Size(880, 674);
             Controls.Add(panel1);
             Controls.Add(panel4);
             Controls.Add(panel7);

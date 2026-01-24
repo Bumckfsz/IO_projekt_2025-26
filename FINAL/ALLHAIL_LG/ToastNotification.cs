@@ -8,16 +8,13 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
     {
         int toastX, toastY;
 
-        // Pola na przechowanie referencji do Form1
         private Form1 _mainForm;
 
-        // Konstruktor bez parametrów (dla Designera, żeby nie krzyczał błędami)
         public ToastNotification()
         {
             InitializeComponent();
         }
 
-        // NOWY KONSTRUKTOR: Przyjmuje Form1
         public ToastNotification(Form1 mainForm) : this()
         {
             _mainForm = mainForm;
@@ -28,32 +25,23 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             position();
         }
 
-        // ====================================================
-        // TO JEST AKCJA DLA PRZYCISKU "ANSWER"
-        // ====================================================
         private void toastAnswer_Click(object sender, EventArgs e)
         {
             if (_mainForm != null)
             {
-                // 1. Jeśli okno było ukryte (np. w trayu), pokaż je
                 _mainForm.Show();
 
-                // 2. Jeśli okno jest zminimalizowane (na pasku zadań), przywróć je
                 if (_mainForm.WindowState == FormWindowState.Minimized)
                 {
                     _mainForm.WindowState = FormWindowState.Normal;
                 }
 
-                // 3. Wymuś wyciągnięcie na wierzch
                 _mainForm.BringToFront();
                 _mainForm.Activate();
-                _mainForm.Focus(); // Dodatkowe ubezpieczenie
-
-                // 4. Zresetuj widok na Projekty
+                _mainForm.Focus(); 
                 _mainForm.SetupNavigation();
             }
 
-            // 5. Zamknij powiadomienie
             this.Close();
         }
 

@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Activity.Domain.Models;
 
-/* Odpowiada za tworzenie raportów tygodniowych i miesiecznych 
- */
 
 namespace Activity.Domain.Services
 {

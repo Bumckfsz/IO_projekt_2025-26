@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-/*Punkty zdobyte przez uzytkownika w danym dniu*/
+/*Punkty zdobyte przez uzytkownika*/
 namespace Activity.Domain.Models
 {
     public class Points

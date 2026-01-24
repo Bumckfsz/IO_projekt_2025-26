@@ -14,7 +14,6 @@ namespace Activity.Domain.Services
         {
             using (var context = new ActivityContext())
             {
-                // Szukamy zadania w bazie
                 var taskDb = context.ProjectTasks.Find(task.TaskId);
 
                 if (taskDb != null)

@@ -53,8 +53,9 @@
             dataPanel.Controls.Add(monthlySummaryPanel);
             dataPanel.Dock = DockStyle.Top;
             dataPanel.Location = new Point(0, 0);
+            dataPanel.Margin = new Padding(3, 4, 3, 4);
             dataPanel.Name = "dataPanel";
-            dataPanel.Size = new Size(763, 68);
+            dataPanel.Size = new Size(872, 91);
             dataPanel.TabIndex = 0;
             // 
             // dataPanel2
@@ -63,18 +64,20 @@
             dataPanel2.Controls.Add(monthlyPointsAmt);
             dataPanel2.Controls.Add(monthlyPointsAmtLabel);
             dataPanel2.Dock = DockStyle.Right;
-            dataPanel2.Location = new Point(369, 0);
+            dataPanel2.Location = new Point(422, 0);
+            dataPanel2.Margin = new Padding(3, 4, 3, 4);
             dataPanel2.Name = "dataPanel2";
-            dataPanel2.Size = new Size(394, 68);
+            dataPanel2.Size = new Size(450, 91);
             dataPanel2.TabIndex = 1;
+            dataPanel2.Paint += dataPanel2_Paint;
             // 
             // monthlyPointsAmt
             // 
             monthlyPointsAmt.AutoSize = true;
             monthlyPointsAmt.Font = new Font("Consolas", 15F);
-            monthlyPointsAmt.Location = new Point(327, 23);
+            monthlyPointsAmt.Location = new Point(374, 31);
             monthlyPointsAmt.Name = "monthlyPointsAmt";
-            monthlyPointsAmt.Size = new Size(43, 23);
+            monthlyPointsAmt.Size = new Size(55, 29);
             monthlyPointsAmt.TabIndex = 3;
             monthlyPointsAmt.Text = "INT";
             // 
@@ -83,19 +86,21 @@
             monthlyPointsAmtLabel.Anchor = AnchorStyles.None;
             monthlyPointsAmtLabel.AutoSize = true;
             monthlyPointsAmtLabel.Font = new Font("Consolas", 15F);
-            monthlyPointsAmtLabel.Location = new Point(3, 23);
+            monthlyPointsAmtLabel.Location = new Point(3, 31);
             monthlyPointsAmtLabel.Name = "monthlyPointsAmtLabel";
-            monthlyPointsAmtLabel.Size = new Size(318, 23);
+            monthlyPointsAmtLabel.Size = new Size(405, 29);
             monthlyPointsAmtLabel.TabIndex = 1;
             monthlyPointsAmtLabel.Text = "Points collected this month:";
+            monthlyPointsAmtLabel.Click += monthlyPointsAmtLabel_Click;
             // 
             // monthlySummaryPanel
             // 
             monthlySummaryPanel.Controls.Add(monthlySummaryLabel);
             monthlySummaryPanel.Dock = DockStyle.Left;
             monthlySummaryPanel.Location = new Point(0, 0);
+            monthlySummaryPanel.Margin = new Padding(3, 4, 3, 4);
             monthlySummaryPanel.Name = "monthlySummaryPanel";
-            monthlySummaryPanel.Size = new Size(373, 68);
+            monthlySummaryPanel.Size = new Size(426, 91);
             monthlySummaryPanel.TabIndex = 0;
             // 
             // monthlySummaryLabel
@@ -103,9 +108,9 @@
             monthlySummaryLabel.Anchor = AnchorStyles.None;
             monthlySummaryLabel.AutoSize = true;
             monthlySummaryLabel.Font = new Font("Consolas", 15F);
-            monthlySummaryLabel.Location = new Point(71, 23);
+            monthlySummaryLabel.Location = new Point(81, 31);
             monthlySummaryLabel.Name = "monthlySummaryLabel";
-            monthlySummaryLabel.Size = new Size(241, 23);
+            monthlySummaryLabel.Size = new Size(307, 29);
             monthlySummaryLabel.TabIndex = 1;
             monthlySummaryLabel.Text = "Current month summary";
             monthlySummaryLabel.Click += weeklySummaryLabel_Click;
@@ -114,9 +119,10 @@
             // 
             chartPanel.Controls.Add(monthlyChart);
             chartPanel.Dock = DockStyle.Fill;
-            chartPanel.Location = new Point(0, 68);
+            chartPanel.Location = new Point(0, 91);
+            chartPanel.Margin = new Padding(3, 4, 3, 4);
             chartPanel.Name = "chartPanel";
-            chartPanel.Size = new Size(763, 382);
+            chartPanel.Size = new Size(872, 509);
             chartPanel.TabIndex = 1;
             // 
             // monthlyChart
@@ -127,23 +133,25 @@
             legend1.Name = "Legend1";
             monthlyChart.Legends.Add(legend1);
             monthlyChart.Location = new Point(0, 0);
+            monthlyChart.Margin = new Padding(3, 4, 3, 4);
             monthlyChart.Name = "monthlyChart";
             monthlyChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             monthlyChart.Series.Add(series1);
-            monthlyChart.Size = new Size(763, 382);
+            monthlyChart.Size = new Size(872, 509);
             monthlyChart.TabIndex = 0;
             monthlyChart.Text = "chart1";
             // 
             // monthlySummary
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(763, 450);
+            ClientSize = new Size(872, 600);
             Controls.Add(chartPanel);
             Controls.Add(dataPanel);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "monthlySummary";
             Text = "monthlySummary";
             dataPanel.ResumeLayout(false);

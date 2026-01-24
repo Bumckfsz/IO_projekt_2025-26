@@ -12,7 +12,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
         public event Action<Project> OnProjectNameChanged;
         public event Action<Project> OnProjectDelete;
 
-        // FLAGA BEZPIECZEŃSTWA
         private bool _isDeleted = false;
 
         public UIProjectObject(Project project)
@@ -21,7 +20,7 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             ProjectData = project;
 
            
-            projectName.MaxLength = 100; // Było 50, teraz więcej miejsca
+            projectName.MaxLength = 100; 
             projectName.Font = new Font("Courier", 11.0f);
             projectName.Text = project.Name;
             projectName.ReadOnly = false;
@@ -45,10 +44,8 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
                                              "Usuwanie", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
-                    // ---  Blokujemy zapis przed usunięciem ---
                     _isDeleted = true;
 
-                    // Odbieramy fokus polu tekstowemu, żeby nie odpaliło Leave po usunięciu
                     this.Focus();
 
                     OnProjectDelete?.Invoke(ProjectData);
@@ -83,7 +80,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
 
         private void SaveName()
         {
-            // ---  Jeśli usuwamy, NIE zapisuj ---
             if (_isDeleted) return;
 
             if (ProjectData.Name != projectName.Text)

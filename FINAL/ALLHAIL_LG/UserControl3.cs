@@ -1,7 +1,6 @@
 ﻿//UserControl3.cs
 using System;
 using System.Windows.Forms;
-// Alias dla Activity z bazy danych
 using DomainActivity = Activity.Domain.Models.Activity;
 
 namespace ALLHAILAGNIESZKAANDHERMIRACLES
@@ -21,7 +20,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
         {
             ActivityData = activity;
 
-            // Formatowanie tekstu: Data + Opis
 
             string displayText = $"[{activity.Date.ToShortTimeString()}] {activity.Description}";
             activityBox.Text = displayText;

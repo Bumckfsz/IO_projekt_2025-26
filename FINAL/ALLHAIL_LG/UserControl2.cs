@@ -13,7 +13,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
         public event Action<ProjectTask> OnTaskDelete;
         public event Action<ProjectTask> OnTaskComplete;
 
-        // FLAGA BEZPIECZEŃSTWA
         private bool _isDeleted = false;
 
         public UITaskObject(ProjectTask task)
@@ -21,7 +20,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
             InitializeComponent();
             TaskData = task;
 
-            // ---  Limit znaków ---
             taskName.MaxLength = 100;
             taskName.Font = new Font("Courier", 11.0f);
             taskName.Text = task.Name;
@@ -66,7 +64,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
                 var result = MessageBox.Show($"Usunąć zadanie '{TaskData.Name}'?", "Usuwanie", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    // ---  Blokada zapisu ---
                     _isDeleted = true;
                     this.Focus();
                     OnTaskDelete?.Invoke(TaskData);
@@ -101,7 +98,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
 
         private void SaveName()
         {
-            // ---  Sprawdzenie flagi ---
             if (_isDeleted) return;
 
             if (TaskData.Name != taskName.Text)

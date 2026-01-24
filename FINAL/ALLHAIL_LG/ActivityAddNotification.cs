@@ -3,13 +3,12 @@ using Activity.Domain.Models;
 using Activity.Domain.Data;   
 using System;
 using System.Windows.Forms;
-using DomainActivity = Activity.Domain.Models.Activity; // Alias
+using DomainActivity = Activity.Domain.Models.Activity;
 
 namespace ALLHAILAGNIESZKAANDHERMIRACLES
 {
     public partial class ActivityAddNotification : Form
     {
-        //  Nie potrzebujemy Panelu ani Layoutu, potrzebujemy ID Zadania
         private ProjectTask _targetTask;
 
         public ActivityAddNotification(ProjectTask task)
@@ -24,7 +23,6 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
 
             if (!string.IsNullOrWhiteSpace(description) && _targetTask != null)
             {
-                // Zamiast rysować kafelek ręcznie, ZAPISUJEMY DO BAZY
                 using (var db = new ActivityContext())
                 {
                     //  Znajdź zadanie w bazie
@@ -45,10 +43,14 @@ namespace ALLHAILAGNIESZKAANDHERMIRACLES
                 }
             }
 
-            // Zamykamy okno. Form1 sam sobie odświeży listę.
             this.Close();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e) { }
+
+        private void ActivityAddNotification_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
